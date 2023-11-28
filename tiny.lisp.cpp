@@ -30,5 +30,6 @@ public:
     static Variant parse_json(jsonlib::Json job);
 };
 std::string Variant::to_string() {
-
+}
+std::string Variant::to_json_string() {
 }
