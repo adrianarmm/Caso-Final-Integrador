@@ -19,3 +19,7 @@ public:
     std::vector<Variant> list;
     proc_type proc;
     Entorno* env;
+
+    Variant(variant_type type = variant_type::Symbol) : type(type), env(nullptr), proc(nullptr) {}
+    Variant(variant_type type, const std::string& val) : type(type), val(val), env(nullptr), proc(nullptr) {}
+    Variant(proc_type proc) : type(variant_type::Proc), proc(proc), env(nullptr) {}
