@@ -7,6 +7,8 @@ enum variant_type { Symbol, Number, List, Proc, Lambda, Cadena };
 
 struct Entorno;
 
+class Json;
+
 class Variant
         {
 public:
@@ -27,7 +29,7 @@ public:
     std::string to_string();
     std::string to_json_string();
     static Variant from_json_string(const std::string& json);
-    static Variant parse_json(jsonlib::Json job);
+    static Variant parse_json(json11::Json job);
 };
 std::string Variant::to_string() {
 }
