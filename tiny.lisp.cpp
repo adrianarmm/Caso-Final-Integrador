@@ -23,3 +23,9 @@ public:
     Variant(variant_type type = variant_type::Symbol) : type(type), env(nullptr), proc(nullptr) {}
     Variant(variant_type type, const std::string& val) : type(type), val(val), env(nullptr), proc(nullptr) {}
     Variant(proc_type proc) : type(variant_type::Proc), proc(proc), env(nullptr) {}
+
+    std::string to_string();
+    std::string to_json_string();
+    static Variant from_json_string(const std::string& json);
+    static Variant parse_json(jsonlib::Json job);
+};
