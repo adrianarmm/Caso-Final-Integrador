@@ -1,0 +1,22 @@
+
+"name": "jsonlib",
+"description": "Simple JSON parsing library for arduino"
+"keywords": "json arduino",
+"authors": {
+"name": "Justin Shaw",
+"url": "https://wyolum.com/the-wyolum-team/",
+"maintainer": true
+},
+"repository": {
+"type": "git",
+"url": "https://github.com/wyolum/jsonlib"
+},
+"version": "0.1.3",
+"framework": "arduino",
+"platforms": "*",
+"build": {
+"libArchive": false
+}
+
+
+
